@@ -42,4 +42,4 @@ jobs:
         retention-days: 21
     
     - name: Run project
-      run: dotnet dotnet run --project ./Sender/SensorSender/SensorSender/SensorSender.csproj
+      run:  dotnet run --project ./Sender/SensorSender/SensorSender/SensorSender.csproj
