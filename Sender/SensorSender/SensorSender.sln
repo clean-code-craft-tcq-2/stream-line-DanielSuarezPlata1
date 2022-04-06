@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorSender", "SensorSender\SensorSender.csproj", "{4DA16A37-21B2-48DA-9B8C-33E6EFB902D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorSenderTests", "SensorSenderTests\SensorSenderTests.csproj", "{AED3C26B-2DC1-4D1D-A2EF-6476C76E2495}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DA16A37-21B2-48DA-9B8C-33E6EFB902D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DA16A37-21B2-48DA-9B8C-33E6EFB902D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DA16A37-21B2-48DA-9B8C-33E6EFB902D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DA16A37-21B2-48DA-9B8C-33E6EFB902D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AED3C26B-2DC1-4D1D-A2EF-6476C76E2495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AED3C26B-2DC1-4D1D-A2EF-6476C76E2495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AED3C26B-2DC1-4D1D-A2EF-6476C76E2495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AED3C26B-2DC1-4D1D-A2EF-6476C76E2495}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC687FF9-547A-4117-8350-613EED9F3A4C}
+	EndGlobalSection
+EndGlobal
