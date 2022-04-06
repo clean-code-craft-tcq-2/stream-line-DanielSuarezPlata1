@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
+using System.Reflection;
 using System.Text.Json;
 
 namespace SensorSender
@@ -38,7 +39,9 @@ namespace SensorSender
         {
             List<SensorData> sensorDataReadings = new List<SensorData>();
 
-            using (var rd = new StreamReader("SensorData.csv"))
+            string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "SensorData.csv");
+
+            using (var rd = new StreamReader(path))
             {
                 while (!rd.EndOfStream)
                 {
