@@ -43,3 +43,12 @@ jobs:
     
     - name: Run project
       run:  dotnet run --project ./Sender/SensorSender/SensorSender/SensorSender.csproj
+      
+    - name: build
+      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o testchecker test_receiver_streamlineOutData.cpp ./Receiver/receive_Streaming_BMS_values.cpp
+      
+    - name: run
+      run: ./testchecker
+
+    - name: integrate run
+      run: dotnet run --project ./Sender/SensorSender/SensorSender/SensorSender.csproj | ./testchecker
