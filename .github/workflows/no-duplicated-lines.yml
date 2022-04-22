@@ -1,0 +1,17 @@
+name: No duplication beyond 3 lines
+
+on: [push, pull_request]
+
+jobs:
+  nodups:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install jscpd
+      run: sudo npm install -g jscpd
+
+    - name: Check duplications
+      run: jscpd . --min-lines 3 --min-tokens 48 --threshold 0
